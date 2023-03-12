@@ -13,7 +13,7 @@ body {
 
 .section {
    border-top: 0.1em solid #777;
-   color: rgb(21, 21, 152);
+   color: rgb(56, 56, 213);
    transition: .5s;
 }
 
@@ -43,7 +43,7 @@ body {
 .title_mem {
    width: 80%;
    font-size: 0.7rem;
-   padding: 0.3rem 0;
+   padding: 0.6rem 0;
    transition: .5s;
 }
 
@@ -53,14 +53,6 @@ body {
    margin: auto;
    border-radius: 0.3em;
    transition: 1s;
-}
-
-.img_title {
-   font-size: 0.9rem;
-   margin-bottom: 0.3rem;
-   font-family: cursive;
-   color: #fff;
-   text-shadow: 0 0 0.2em black;
 }
 
 /* ----------------------------------------------------- */
@@ -76,20 +68,8 @@ input {
    color: black;
 }
 
-.img_mem_wrap {
-   display: none;
-}
-
-.section:hover>.label>.img_mem_wrap {
-   display: block;
-}
-
 .section:hover>.label>.title_mem_wrap>.icon_plus>.plus {
    transform: rotate(855deg);
-}
-
-.checkbox:checked+.label .img_mem_wrap {
-   display: block;
 }
 
 .checkbox:checked+.label .title_mem_wrap {
@@ -103,12 +83,12 @@ input {
 
 .section:hover>.label>.img_mem {
    width: 60%;
-   margin-bottom: 0.3rem;
+   margin-bottom: 0.6rem;
 }
 
 .checkbox:checked+.label .img_mem {
    width: 60%;
-   margin-bottom: 0.3rem;
+   margin-bottom: 0.6rem;
 }
 
 .section:active {
@@ -134,7 +114,7 @@ input {
    }
 
    .wrapper {
-      width: 70%;
+      width: 60%;
    }
 
    .plus {
@@ -142,13 +122,13 @@ input {
    }
 
    .section:hover>.label>.img_mem {
-      width: 50%;
-      margin-bottom: 0.3rem;
+      width: 45%;
+      margin-bottom: 0.6rem;
    }
 
    .checkbox:checked+.label .img_mem {
-      width: 50%;
-      margin-bottom: 0.3rem;
+      width: 45%;
+      margin-bottom: 0.6rem;
    }
 }
 
@@ -170,7 +150,7 @@ input {
    }
 
    .wrapper {
-      width: 60%;
+      width: 50%;
    }
 
    .plus {
@@ -178,12 +158,12 @@ input {
    }
 
    .section:hover>.label>.img_mem {
-      width: 40%;
-      margin-bottom: 0.3rem;
+      width: 35%;
+      margin-bottom: 0.6rem;
    }
 
    .checkbox:checked+.label .img_mem {
-      width: 40%;
-      margin-bottom: 0.3rem;
+      width: 35%;
+      margin-bottom: 0.6rem;
    }
 }
