@@ -1,0 +1,169 @@
+body {
+   background-color: rgb(209, 214, 216);
+   font-weight: bold;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   box-sizing: border-box;
+   cursor: none;
+}
+
+.title_mem_wrap {
+   display: flex;
+   justify-content: space-between;
+}
+
+.section {
+   border-top: 0.1em solid #777;
+   color: rgb(56, 56, 213);
+   transition: .5s;
+}
+
+.icon_plus {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
+
+.plus {
+   display: none;
+   width: 50%;
+   transition: .5s;
+}
+
+.wrapper {
+   width: 75%;
+   margin: auto;
+}
+
+.title {
+   font-size: 1.4rem;
+   margin: 1rem 0 0.3rem 0;
+   ;
+}
+
+.title_mem {
+   width: 80%;
+   font-size: 0.7rem;
+   padding: 0.6rem 0;
+   transition: .5s;
+}
+
+.img_mem {
+   display: block;
+   width: 0;
+   margin: auto;
+   border-radius: 0.3em;
+   transition: 1s;
+}
+
+/* ----------------------------------------------------- */
+input {
+   display: none;
+}
+
+.wrapper:hover>.section>.label>.title_mem_wrap>.icon_plus>.plus {
+   display: block;
+}
+
+.wrapper:hover>.section {
+   color: black;
+}
+
+.section:hover>.label>.title_mem_wrap>.icon_plus>.plus {
+   transform: rotate(855deg);
+}
+
+.checkbox:checked+.label .title_mem_wrap {
+   color: black;
+}
+
+.checkbox:checked+.label .title_mem_wrap .icon_plus .plus {
+   display: block;
+   transform: rotate(855deg);
+}
+
+.section:hover>.label>.img_mem {
+   width: 60%;
+   margin-bottom: 0.6rem;
+}
+
+.checkbox:checked+.label .img_mem {
+   width: 60%;
+   margin-bottom: 0.6rem;
+}
+
+.section:active {
+   opacity: 0.6;
+}
+
+.section:active>.label>.title_mem_wrap>.title_mem {
+   color: rgb(211, 43, 37);
+}
+
+:root,
+.wrapper,
+.section,
+.label {
+   cursor: none;
+}
+
+/* ----------------------------------------------------- */
+
+@media screen and (min-width: 820px) and (max-width: 1919px) {
+   :root {
+      font-size: 1.3rem;
+   }
+
+   .wrapper {
+      width: 60%;
+   }
+
+   .plus {
+      width: 50%;
+   }
+
+   .section:hover>.label>.img_mem {
+      width: 45%;
+      margin-bottom: 0.6rem;
+   }
+
+   .checkbox:checked+.label .img_mem {
+      width: 45%;
+      margin-bottom: 0.6rem;
+   }
+}
+
+
+@media screen and (min-width: 1920px) {
+   :root {
+      font-size: 1.6rem;
+   }
+
+   :root,
+   body {
+      cursor: default;
+   }
+
+   .wrapper,
+   .section,
+   .label {
+      cursor: pointer;
+   }
+
+   .wrapper {
+      width: 50%;
+   }
+
+   .plus {
+      width: 60%;
+   }
+
+   .section:hover>.label>.img_mem {
+      width: 35%;
+      margin-bottom: 0.6rem;
+   }
+
+   .checkbox:checked+.label .img_mem {
+      width: 35%;
+      margin-bottom: 0.6rem;
+   }
+}
